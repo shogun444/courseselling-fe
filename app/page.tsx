@@ -2,6 +2,7 @@
 import Hero from "@/components/Hero";
 import Logo from "@/components/logo";
 import Navbar from "@/components/navbar";
+import SVG from "@/components/Svg";
 import Image from "next/image";
 
 
@@ -18,6 +19,8 @@ export default function Home() {
 
        </div>
 <Hero/>
+
+<SVG/>
     </div>
   );
 }
