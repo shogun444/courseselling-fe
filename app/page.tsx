@@ -8,7 +8,7 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-  <div className=" m-5   w-[95vw] mx-auto rounded-3xl bg-linear-to-r from-violet-100 via-transparent to-pink-50 h-screen ">
+  <div className=" m-5   w-[95vw] mx-auto rounded-3xl bg-linear-to-r from-violet-100  via-transparent to-pink-50  h-screen ">
     <div className="flex justify-between py-8 px-15  ">
       <div className="flex"> 
         <Logo/>
@@ -20,7 +20,7 @@ export default function Home() {
        </div>
 <Hero/>
 
-<SVG/>
+
     </div>
   );
 }
