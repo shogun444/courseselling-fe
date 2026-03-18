@@ -5,7 +5,7 @@ export default function Logo(){
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 256 256"
         width="35"
-        height="24"
+        height="30"
         fill="rgb(159, 128, 218)"
       >
         <g color="rgb(159, 128, 218)">
