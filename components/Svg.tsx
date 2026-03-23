@@ -9,10 +9,10 @@ export default function SVG() {
    <h1>Enroll in the COurse</h1>
    <h1>Start Watching Videos</h1> */}
 
-      <div className="size-15 translate-x-2  translate-y-4 bg-violet-50 border-3 border-white  rounded-md"></div>
-      <div className="size-15 translate-x-35  translate-y-34  bg-violet-50 border-3 border-white  rounded-md"></div>
+      <div className="size-15 translate-x-2 p-5 translate-y-4 bg-violet-50 border-3 border-white  rounded-md"></div>
+      <div className="size-15 translate-x-35 p-5 translate-y-34  bg-violet-50 border-3 border-white  rounded-md"></div>
       <div className="h-15 w-45 -translate-x-10  -translate-y-6  bg-violet-50 border-3 border-white  rounded-md"></div>
-      <div className="size-15 -translate-x-6  translate-y-10  bg-violet-50 border-3 border-white  rounded-md"></div>
+      <div className="size-15 -translate-x-6   translate-y-10  bg-violet-50 border-3 border-white  rounded-md"></div>
       <div className="size-15 -translate-x-6  translate-y-20  bg-violet-50 border-3 border-white  rounded-md"></div>
 
       <div className="h-10 w-15 overflow-hidden  rounded-md translate-x-41  -translate-y-42 p-px">

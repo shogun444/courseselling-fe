@@ -3,7 +3,7 @@ export default function Navbar() {
   return (
     <>
       {nav.map((itm, idx) => (
-        <span className="pr-6 text-violet-950 text-lg font-semibold " key={idx}>
+        <span className=" mr-6 text-violet-950 text-lg font-semibold " key={idx}>
           {itm}
         </span>
       ))}
