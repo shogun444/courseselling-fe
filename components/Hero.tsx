@@ -5,11 +5,8 @@ import { div } from "motion/react-client";
 
 export default function Hero() {
   return (
-  <div>
- <ImageScroll />
-      
-
-      
-    </div>
+  
+<div></div>
+    
   );
 }
