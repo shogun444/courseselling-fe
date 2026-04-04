@@ -39,6 +39,12 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-manrope);
+  --font-caveat: var(--font-caveat);
+  --shadow-input:
+    0px 2px 3px -1px rgba(0, 0, 0, 0.1), 0px 1px 0px 0px rgba(25, 28, 33, 0.02),
+    0px 0px 0px 1px rgba(25, 28, 33, 0.08);
 }
 
 :root {
@@ -74,8 +80,6 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  --font-display: var(--font-manrope);
-  --font-sans : var(--font-inter)
 }
 
 .dark {
@@ -118,10 +122,5 @@
   }
   body {
     @apply bg-background text-foreground;
-  }
-
-  /* provide a utility to use the project's primary font variable */
-  .font-primary {
-    font-family: var(--font-inter);
   }
 }

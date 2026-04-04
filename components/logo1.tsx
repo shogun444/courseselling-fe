@@ -6,7 +6,7 @@ export default function Logo(){
         viewBox="0 0 256 256"
         width="35"
         height="30"
-        fill="rgb(29, 86, 115)"
+        fill="rgb(245, 245, 245)"
       >
         <g color="rgb(159, 128, 218)">
           <path
