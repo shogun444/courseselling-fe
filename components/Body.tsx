@@ -1,6 +1,6 @@
 "use client"
 import { cn } from "@/lib/utils";
-import FAQs, { Title, Subitle, Answer } from "./FAQs";
+import FAQs, { Title, Subitle, Answer, Questions } from "./FAQs";
 import { Curvy, Subheading } from "./Hero";
 import { useState } from "react";
 
@@ -30,12 +30,21 @@ export default function Body() {
           </Answer>
         </div>
         <div className="col-span-2 p-5 rounded-3xl shadow-input bg-neutral-200">
-          <div onClick={()=>setShow(prev =>!prev)} className="w-10  bg-neutral-300 cursor-pointer h-10 rounded-full flex justify-center items-center">
+          <div onClick={()=>setShow(prev =>!prev)} className="w-10 text-neutral-400  bg-neutral-300 cursor-pointer h-10 rounded-full flex justify-center items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-bookmark-icon lucide-bookmark"><path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/></svg>
           </div>
 
-{show &&  <Container className="rounded-xl w-60 h-50 -translate-y-15 translate-x-8">
-            
+{show &&  <Container className="rounded-xl  w-60 h-50  -translate-y-15 translate-x-8">
+  <div className="flex justify-between items-center px-4 pt-2">
+    <Question className="text-lg font-bold">BookMark</Question>
+            <Question className="text-neutral-400 text-xs">3 new</Question></div>
+              
+            <Data className="bg-blue-600" name="React hooks" time="12:27 am" key={1}></Data>
+            <Data className="bg-gray-700" name="Promises in JS" time="1:27 am" key={3}></Data> 
+              <Data  name="Debouncing" time="12:27 pm" key={2}></Data>
+
+            <Question className="text-neutral-400 text-xs flex justify-center pt-2 border-t-2 border-neutral-300">View All Bookmarks</Question>
+
           </Container> }
          
           <Question>Save & Track</Question>
@@ -48,17 +57,17 @@ export default function Body() {
       <div className="w-full h-100 my-7 gap-8 grid grid-cols-4">
         <div className="col-span-2 p-5 rounded-3xl shadow-input bg-neutral-200 ">
           
-          <Container className="rounded-lg bg-neutral-100"> 
+          <Container className="rounded-lg p-4 bg-neutral-100"> 
             <Titles title={'AI that saves you hours of learning'}><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-loader-pinwheel-icon lucide-loader-pinwheel"><path d="M22 12a1 1 0 0 1-10 0 1 1 0 0 0-10 0"/><path d="M7 20.7a1 1 0 1 1 5-8.7 1 1 0 1 0 5-8.6"/><path d="M7 3.3a1 1 0 1 1 5 8.6 1 1 0 1 0 5 8.6"/><circle cx="12" cy="12" r="10"/></svg></Titles>
             <Subtitle>No more wasting time get straight to what actually matters.</Subtitle>
           </Container>
 
-           <Container className="ml-49 rounded-lg bg-neutral-100 border-2 border-cyan-500">
+           <Container className="ml-49 p-4 rounded-lg bg-neutral-100 border-2 border-cyan-500">
             <Titles title={'Smarter Learning, Faster Results'}>
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-activity-icon lucide-activity"><path d="M22 12h-2.48a2 2 0 0 0-1.93 1.46l-2.35 8.36a.25.25 0 0 1-.48 0L9.24 2.18a.25.25 0 0 0-.48 0l-2.35 8.36A2 2 0 0 1 4.49 12H2"/></svg>
             </Titles>
              <Subtitle>Perfect for quick revision, last-minute prep, or efficient learning.</Subtitle>
-             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(0, 183, 219)" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-cyan-500 translate-x-75 translate-y-8 lucide lucide-mouse-pointer2-icon lucide-mouse-pointer-2"><path d="M4.037 4.688a.495.495 0 0 1 .651-.651l16 6.5a.5.5 0 0 1-.063.947l-6.124 1.58a2 2 0 0 0-1.438 1.435l-1.579 6.126a.5.5 0 0 1-.947.063z"/></svg>
+             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="rgb(0, 183, 219)" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-cyan-500  translate-x-75 translate-y-2 lucide lucide-mouse-pointer2-icon lucide-mouse-pointer-2"><path d="M4.037 4.688a.495.495 0 0 1 .651-.651l16 6.5a.5.5 0 0 1-.063.947l-6.124 1.58a2 2 0 0 0-1.438 1.435l-1.579 6.126a.5.5 0 0 1-.947.063z"/></svg>
           </Container>
           <Question> AI Summary</Question>
          
@@ -81,11 +90,23 @@ export default function Body() {
 }
 
 
-
+function Data({time,name,className} : {className ?: string,time : string,name:string}){
+  return(<div className="flex px-4 items-center justify-between">
+       <div className="flex items-center gap-1 my-2">
+    <div className={cn(`w-7 h-7 rounded-full bg-amber-600`,className)}>
+    </div>
+ 
+      <Question className="text-sm">{name}</Question>
+    
+       </div>
+    
+    <Question className="text-sm ">{time}</Question>
+  </div>)
+}
 
 export function Container({ children , className}: {className ?: string,children : React.ReactNode}) {
   return (
-    <div className={cn(`w-90 p-4 m-4 text-center  shadow-input bg-neutral-200`,className)}>
+    <div className={cn(`w-90 h-33  m-4 text-center  shadow-input bg-neutral-200`,className)}>
       
       {children}
     </div>
@@ -115,7 +136,7 @@ export function Question({
   className?: string;
 }) {
   return (
-    <div className="text-2xl font-display font-semibold flex items-center justify-between">
+    <div className={cn(`text-2xl font-display font-semibold flex items-center justify-between`,className)}>
       {children}
     </div>
   );
