@@ -3,6 +3,7 @@ import { cn } from "@/lib/utils";
 import FAQs, { Title, Subitle, Answer, Questions } from "./FAQs";
 import { Curvy, Subheading } from "./Hero";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Body() {
   const [show,setShow] = useState(false)
@@ -21,7 +22,8 @@ export default function Body() {
       </div>
 
       <div className="w-full h-100 my-7 gap-8 grid grid-cols-5">
-        <div className="col-span-3 p-5 rounded-3xl shadow-input bg-neutral-200">
+        <div className="col-span-3 p-5 rounded-3xl shadow-input bg-linear-to-r bg-neutral-100 via-neutral-100 to-blue-50">
+          <Image className="object-contain h-70 overflow-hidden w-full" src="/ne.webp" height="1000" width="1000" alt="sad" ></Image>
           <Question>Smooth Cinema-Grade Player</Question>
           <Answer>
             Experience learning like a premier screening. Our custom player
@@ -29,7 +31,7 @@ export default function Body() {
             across all regions.
           </Answer>
         </div>
-        <div className="col-span-2 p-5 rounded-3xl shadow-input bg-neutral-200">
+        <div className="col-span-2 p-5 rounded-3xl shadow-input bg-linear-to-r bg-neutral-100 via-neutral-100 to-netral-50">
           <div onClick={()=>setShow(prev =>!prev)} className="w-10 text-neutral-400  bg-neutral-300 cursor-pointer h-10 rounded-full flex justify-center items-center">
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-bookmark-icon lucide-bookmark"><path d="M17 3a2 2 0 0 1 2 2v15a1 1 0 0 1-1.496.868l-4.512-2.578a2 2 0 0 0-1.984 0l-4.512 2.578A1 1 0 0 1 5 20V5a2 2 0 0 1 2-2z"/></svg>
           </div>
@@ -55,7 +57,7 @@ export default function Body() {
         </div>
       </div>
       <div className="w-full h-100 my-7 gap-8 grid grid-cols-4">
-        <div className="col-span-2 p-5 rounded-3xl shadow-input bg-neutral-200 ">
+        <div className="col-span-2 p-5 rounded-3xl shadow-input bg-linear-to-r bg-neutral-100 via-neutral-100 to-neutral-50 ">
           
           <Container className="rounded-lg p-4 bg-neutral-100"> 
             <Titles title={'AI that saves you hours of learning'}><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="lucide lucide-loader-pinwheel-icon lucide-loader-pinwheel"><path d="M22 12a1 1 0 0 1-10 0 1 1 0 0 0-10 0"/><path d="M7 20.7a1 1 0 1 1 5-8.7 1 1 0 1 0 5-8.6"/><path d="M7 3.3a1 1 0 1 1 5 8.6 1 1 0 1 0 5 8.6"/><circle cx="12" cy="12" r="10"/></svg></Titles>
@@ -75,7 +77,8 @@ export default function Body() {
           Instantly turns your content into clear, concise insights your users can grasp in seconds
           </Answer>
         </div>
-        <div className="col-span-2 p-5 rounded-3xl shadow-input bg-neutral-200">
+        <div className="col-span-2 p-5 rounded-3xl shadow-input bg-linear-to-r bg-neutral-100 via-neutral-100 to-purple-50">
+          <Image  src="/1.avif" height="1000" width="1000" alt="sad" ></Image>
           <Question>Cross-device sync</Question>
           <Answer>
             Start on your desktop, continue on your morning commute via iPad or
