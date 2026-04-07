@@ -22,8 +22,8 @@ export default function Body() {
         </Answer>
       </div>
 
-      <div className="w-full h-100 my-7 gap-8 grid grid-cols-5">
-        <div className="col-span-3 p-5 rounded-3xl shadow-input bg-linear-to-r bg-neutral-100 via-neutral-100 to-blue-50">
+      <div className="w-full h-100 my-16 gap-8 grid grid-cols-5">
+        <div className="col-span-3 p-5  rounded-3xl shadow-input bg-linear-to-r bg-neutral-100 via-neutral-100 to-blue-50">
           <Image
             className="object-contain h-70 overflow-hidden w-full"
             src="/ne.webp"
