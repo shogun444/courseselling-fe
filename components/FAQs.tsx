@@ -67,7 +67,7 @@ export function Title({
   className?: string;
   children: React.ReactNode;
 }) {
-  return <div className="text-5xl font-semibold font-display">{children}</div>;
+  return <div className="text-5xl font-bold font-display">{children}</div>;
 }
 
 export function Questions({
@@ -106,7 +106,7 @@ export function Answer({
   className?: string;
 }) {
   return (
-    <div className={cn(`my-2 font-medium text-lg font-sans  text-neutral-500`,className)}>
+    <div className={cn(`my-2 font-medium text-lg font-sans  text-neutral-500`, className)}>
       {children}
     </div>
   );
