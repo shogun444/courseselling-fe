@@ -19,9 +19,8 @@ export default function Start() {
       <Button>Start Free Trial</Button>
 
       <div className="bg-neutral-200 rounded-2xl p-5 text-left gap-10 flex h-70 w-full">
-        
         <div> </div>
-        <div >
+        <div>
           <Subitle>Navigation </Subitle>
           <Label>Testimonials</Label>
           <Label>FAQ</Label>
@@ -41,11 +40,20 @@ export default function Start() {
         </div>
 
         <div>
-          <Question className="text-neutral-400 font-bold ">AI moves fast. </Question>
+          <Question className="text-neutral-400 font-bold ">
+            AI moves fast.{" "}
+          </Question>
           <Question className="font-bold"> Stay ahead with Kresna.</Question>
 
-          <div>
-            <input type="text" className="bg-white p-4 text-neutral-800 w-60 tracking-tight  rounded-2xl text-md" placeholder="Enter email address" />
+          <div className="relative my-4">
+            <input
+              type="text"
+              className="bg-white p-4 outline-none focus-visible:ring-1 focus-visible:ring-neutral-700 duration-200 w-80 font-semibold rounded-2xl text-[16px]"
+              placeholder="Enter email address"
+            />
+            <Button className="absolute text-md  tracking-normal py-6 shadow-input -translate-x-28 translate-y-1">
+              Subscribe
+            </Button>
           </div>
         </div>
       </div>
