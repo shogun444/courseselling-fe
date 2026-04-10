@@ -5,6 +5,7 @@ import { Curvy, Subheading } from "./Hero";
 import { useState } from "react";
 import Image from "next/image";
 import Pricing from "./Pricing";
+import Start from "./Start";
 
 export default function Body() {
   const [show, setShow] = useState(true);
@@ -176,6 +177,7 @@ export default function Body() {
 
       <FAQs />
       <Pricing />
+      <Start/>
     </div>
   );
 }
