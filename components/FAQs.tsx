@@ -58,7 +58,7 @@ export function Subitle({
   className?: string;
   children: React.ReactNode;
 }) {
-  return <div className="text-xl font-caveat text-neutral-400">{children}</div>;
+  return <div className={cn(`text-xl font-caveat text-neutral-400`,className)}>{children}</div>;
 }
 export function Title({
   children,

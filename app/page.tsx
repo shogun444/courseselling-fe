@@ -11,15 +11,14 @@ export default function Home() {
       <div className=" w-full flex justify-between py-8  ">
         <div className="flex  items-center">
           <Logo />
-          <span className=" text-cyan-950 font-semibold ">SkillTrade</span>
+          <span className=" text-cyan-950 text-xl font-semibold ">SkillTrade</span>
         </div>
         <div>
           <Navbar />
         </div>
       </div>
       <Hero />
-      <Body/>
+      <Body />
     </div>
-    
   );
 }
