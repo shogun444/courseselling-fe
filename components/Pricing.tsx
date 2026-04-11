@@ -8,7 +8,7 @@ import { Button } from "./ui/button";
 export default function Pricing() {
   const [click, setClick] = useState(false);
   return (
-    <div>
+    <div className="mb-40">
       <div className="flex flex-col justify-center items-center">
         <Subitle>Pricing & Plans</Subitle>
         <Title>Plans that grow with you</Title>

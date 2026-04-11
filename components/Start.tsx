@@ -4,11 +4,10 @@ import { Button } from "./ui/button";
 import { Question } from "./Body";
 import Logo from "./logo1";
 import Image from "next/image";
-import Footer from "./Footer";
 
 export default function Start() {
   return (
-    <div className="mt-40   justify-items-center text-center">
+    <div className="py-25 justify-items-center text-center min-h-screen">
       <div>
         <Subitle>Get Started!</Subitle>
         <Title>
@@ -21,9 +20,14 @@ export default function Start() {
 
       <Button>Start Free Trial</Button>
 
-      <div className="flex items-center gap-5">
-        <div className="relative my-40  rounded-2xl   text-left w-90 min-h-112">
-          <Image src="/bg.avif" alt="bg" fill className="object-cover rounded-2xl" />
+      <div className="flex mt-50 items-center gap-5">
+        <div className="relative   rounded-2xl   text-left w-90 min-h-112">
+          <Image
+            src="/bg.avif"
+            alt="bg"
+            fill
+            className="object-cover rounded-2xl"
+          />
 
           <div className="absolute inset-0 z-10 flex p-8">
             <div className="flex-col   gap-8">
@@ -94,7 +98,9 @@ export default function Start() {
           </div>
         </div>
       </div>
-      <Footer />
+      <h1 className=" font-display tracking-tighter -translate-y-27 text-[280px]  font-black bg-clip-text bg-linear-to-r text-transparent from-neutral-200 to-neutral-300">
+        SkillTrade
+      </h1>
     </div>
   );
 }
@@ -116,4 +122,8 @@ export function Label({
       {children}
     </div>
   );
+}
+
+export function Footer() {
+  return <></>;
 }

@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 
 export default function FAQs() {
   return (
-    <div className="my-40 flex justify-between">
+    <div className="my-40 min-h-screen flex justify-between">
       <div>
         <Subitle>FAQ</Subitle>
         <Title>
@@ -106,7 +106,7 @@ export function Answer({
   className?: string;
 }) {
   return (
-    <div className={cn(`my-2 font-medium text-lg font-sans  text-neutral-500`, className)}>
+    <div className={cn(`my-2 font-medium tracking-tight text-md font-sans  text-neutral-500`, className)}>
       {children}
     </div>
   );

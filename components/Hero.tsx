@@ -53,7 +53,6 @@ export default function Hero() {
           ></Image>
         </div>
       </div>
-      
     </div>
   );
 }

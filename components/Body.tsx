@@ -10,7 +10,7 @@ import Start from "./Start";
 export default function Body() {
   const [show, setShow] = useState(true);
   return (
-    <div className="my-40 ">
+    <div className="my-60 min-h-screen p-2">
       <Subitle> Tools</Subitle>
 
       <div className="flex justify-between">
@@ -19,12 +19,12 @@ export default function Body() {
         </Title>
         <Answer className="w-150">
           We stripped away the noise to build a platform that focuses on what
-          truly matters: your growth and the quality of content.
+          truly matters your growth and the quality of content.
         </Answer>
       </div>
 
-      <div className="w-full h-100 my-16 gap-8 grid grid-cols-5">
-        <div className="col-span-3 p-5  rounded-3xl shadow-input bg-linear-to-r bg-neutral-100 via-neutral-100 to-blue-50">
+      <div className="w-full h-100 my-16 gap-6 grid grid-cols-5">
+        <div className="col-span-3 p-5  rounded-3xl shadow-input bg-linear-to-r  from-neutral-200 to-blue-50">
           <Image
             className="object-contain h-70 overflow-hidden w-full"
             src="/ne.webp"
@@ -40,7 +40,7 @@ export default function Body() {
             across all regions.
           </Answer>
         </div>
-        <div className=" col-span-2 p-5 rounded-3xl shadow-input bg-linear-to-r bg-neutral-100 via-neutral-100 to-netral-50">
+        <div className=" col-span-2 p-5 rounded-3xl shadow-input bg-linear-to-r from-neutral-200   to-neutral-100">
           <div
             onClick={() => setShow((prev) => !prev)}
             className="w-10 text-neutral-400  bg-neutral-300 cursor-pointer h-10 rounded-full flex justify-center items-center"
@@ -95,8 +95,8 @@ export default function Body() {
           </Answer>
         </div>
       </div>
-      <div className="w-full h-100 my-10 gap-8 grid grid-cols-4">
-        <div className="col-span-2 p-5 rounded-3xl shadow-input bg-linear-to-r bg-neutral-100 via-neutral-100 to-neutral-50 ">
+      <div className="w-full h-100 my-16 gap-6 grid grid-cols-4">
+        <div className="col-span-2 p-5 rounded-3xl shadow-input bg-linear-to-r from-neutral-200  to-neutral-100 ">
           <Container className="rounded-lg p-4 bg-neutral-100">
             <Titles title={"AI that saves you hours of learning"}>
               <svg
@@ -165,7 +165,7 @@ export default function Body() {
             can grasp in seconds
           </Answer>
         </div>
-        <div className="col-span-2 p-5    rounded-3xl shadow-input bg-linear-to-r bg-neutral-100 via-neutral-100 to-purple-50">
+        <div className="col-span-2 p-5    rounded-3xl shadow-input bg-linear-to-r from-neutral-200 via-neutral-100 to-blue-50">
           <Image src="/1.avif" height="1000" width="1000" alt="sad"></Image>
           <Question>Cross-device sync</Question>
           <Answer>
@@ -174,10 +174,9 @@ export default function Body() {
           </Answer>
         </div>
       </div>
-
-      <FAQs />
-      <Pricing />
-      <Start />
+      <FAQs/>
+      <Pricing/>
+     <Start/>
     </div>
   );
 }
@@ -265,7 +264,7 @@ export function Question({
   return (
     <div
       className={cn(
-        `text-2xl font-display font-semibold flex items-center justify-between`,
+        `text-2xl font-display tracking-tight font-semibold flex items-center justify-between`,
         className,
       )}
     >

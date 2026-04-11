@@ -5,7 +5,7 @@ import Navbar from "@/components/navbar";
 
 export default function Home() {
   return (
-    <div className=" mt-3 px-25 w-[calc(98%)]  mx-auto rounded-3xl bg-linear-to-r from-neutral-200  via-transparent to-zinc-100  ">
+    <div className=" mt-3 px-25 min-h-screen w-[calc(98%)]  mx-auto rounded-3xl bg-linear-to-r from-neutral-200  via-transparent to-zinc-100  ">
       <div className=" w-full flex justify-between py-8  ">
         <div className="flex  items-center">
           <Logo />
@@ -17,8 +17,9 @@ export default function Home() {
           <Navbar />
         </div>
       </div>
-      <Hero />
-      <Body />
+      <Hero/>
+      <Body/>
+      
     </div>
   );
 }
