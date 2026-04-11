@@ -4,10 +4,11 @@ import { Button } from "./ui/button";
 import { Question } from "./Body";
 import Logo from "./logo1";
 import Image from "next/image";
+import Footer from "./Footer";
 
 export default function Start() {
   return (
-    <div className="my-40  min-h-screen justify-items-center text-center">
+    <div className="mt-40   justify-items-center text-center">
       <div>
         <Subitle>Get Started!</Subitle>
         <Title>
@@ -21,8 +22,8 @@ export default function Start() {
       <Button>Start Free Trial</Button>
 
       <div className="flex items-center gap-5">
-        <div className="relative my-40  rounded-2xl overflow-hidden  text-left w-90 min-h-112">
-          <Image src="/bg.avif" alt="bg" fill className="object-cover" />
+        <div className="relative my-40  rounded-2xl   text-left w-90 min-h-112">
+          <Image src="/bg.avif" alt="bg" fill className="object-cover rounded-2xl" />
 
           <div className="absolute inset-0 z-10 flex p-8">
             <div className="flex-col   gap-8">
@@ -32,13 +33,13 @@ export default function Start() {
                   Skilltrade
                 </h1>
               </div>
-              <Question className="text-neutral-100 font-bold mt-48">
+              <Question className="text-neutral-100 font-bold pt-48">
                 Smarter sales automation,
               </Question>
               <Question className="text-neutral-300 font-bold">
                 powered by AI.
               </Question>
-              <Subitle className="text-neutral-50 mt-10">
+              <Subitle className="text-neutral-50 pt-10">
                 Stay in touch!
               </Subitle>
             </div>
@@ -89,10 +90,11 @@ export default function Start() {
                   </Button>
                 </div>
               </div>
-            </div>{" "}
+            </div>
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 }

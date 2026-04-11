@@ -10,7 +10,7 @@ import Start from "./Start";
 export default function Body() {
   const [show, setShow] = useState(true);
   return (
-    <div className="my-40">
+    <div className="my-40 ">
       <Subitle> Tools</Subitle>
 
       <div className="flex justify-between">
@@ -177,7 +177,7 @@ export default function Body() {
 
       <FAQs />
       <Pricing />
-      <Start/>
+      <Start />
     </div>
   );
 }

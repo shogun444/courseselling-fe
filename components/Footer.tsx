@@ -1,9 +1,7 @@
 export default function Footer() {
   return (
-    <div className="w-full text-center">
-      <h1 className="font-display  mx-auto tracking-tight text-9xl font-black text-neutral-300">
-        SkillTrade
-      </h1>
-    </div>
+    <h1 className="m-0 font-display tracking-tighter text-[280px]  -translate-y-50 leading-none font-black bg-clip-text bg-linear-to-r text-transparent from-neutral-200 to-neutral-300">
+      SkillTrade
+    </h1>
   );
 }

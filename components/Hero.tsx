@@ -11,7 +11,7 @@ import FAQs from "./FAQs";
 
 export default function Hero() {
   return (
-    <div className="flex space-x-10  ">
+    <div className="flex  space-x-10  ">
       <div className="md:w-1/2">
         <CTA>Elevate Your Knowledge</CTA>
 
