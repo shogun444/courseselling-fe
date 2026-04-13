@@ -79,7 +79,7 @@ export function Curvy({
   children: React.ReactNode;
 }) {
   return (
-    <div className="tracking-tight text-2xl font-medium font-caveat">
+    <div className={cn(`tracking-tight text-2xl font-medium font-caveat`,className)}>
       {children}
     </div>
   );

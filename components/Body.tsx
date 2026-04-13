@@ -4,7 +4,7 @@ import FAQs, { Title, Subitle, Answer } from "./FAQs";
 
 import { useState } from "react";
 import Image from "next/image";
-import Pricing from "./Pricing";
+import Pricing, { Card, Features } from "./Pricing";
 import Start from "./Start";
 import { Curvy } from "./Hero";
 
@@ -20,7 +20,7 @@ export default function Body() {
   const [show, setShow] = useState(true);
   return (
     <div className=" min-h-screen p-2">
-      <Subitle className="text-center my-20">Trusted by</Subitle>
+      <Subitle className="text-center mt-20 mb-7">Trusted by</Subitle>
       <div className="flex flex-wrap mb-40 justify-center gap-5 w-250 mx-auto">
         {logos.map((itm, idx) => (
           <div
@@ -37,6 +37,35 @@ export default function Body() {
           </div>
         ))}
       </div>
+
+      <Subitle> The Bottleneck in Revenue Teams</Subitle>
+
+      <div className="flex justify-between">
+        <Title>
+          Revenue teams are <br /> drowning in manual work.
+        </Title>
+        <Answer className="w-150">
+          Kresna fixes that by automating the manual parts of your process. Your
+          workflows stay clean, connected, and effortless.
+        </Answer>
+      </div>
+
+      <Card className="w-150 bg-linear-to-tl from-50%  from-blue-700  to-black overflow-hidden">
+        <Curvy className="text-neutral-400">After Skilltrade</Curvy>
+        <Question className="text-white text-5xl">Automated and effortless</Question>
+        <Features className="text-neutral-200 font-sans font-semibold gap-2 mt-40">
+          Calls, notes, and updates are logged automatically.
+        </Features>
+        <Features className="text-neutral-200 font-sans font-semibold gap-2">
+          Forecasts stay accurate and always up to date.{" "}
+        </Features>
+        <Features className="text-neutral-200 font-sans font-semibold gap-2">
+          Deals move through stages with instant AI approvals.
+        </Features>
+        <Features className="text-neutral-200 font-sans font-semibold gap-2">
+          Reports and dashboards sync themselves in real time.
+        </Features>
+      </Card>
 
       <Subitle> Tools</Subitle>
 
@@ -261,7 +290,6 @@ export function Titles({
   return (
     <div className="flex items-center gap-5">
       <div className="bg-neutral-200 rounded-md p-2 text-neutral-400">
-        {" "}
         {children}
       </div>
       <Answer className="font-semibold text-md text-neutral-950 tracking-tight">
