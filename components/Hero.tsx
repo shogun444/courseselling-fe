@@ -1,13 +1,9 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
-import ImageScroll from "./ImageScroll";
-import { div } from "motion/react-client";
-import Body from "./Body";
+
 import { cn } from "@/lib/utils";
 import Logo from "./logo1";
 import Arrow from "./Arrow";
-import { ReactNode } from "react";
-import FAQs from "./FAQs";
 
 export default function Hero() {
   return (
@@ -30,7 +26,6 @@ export default function Hero() {
         </div>
 
         <div className="flex mt-3 items-center text-neutral-400">
-          
           <Arrow /> <Curvy>1-month free trial. No credit card required.</Curvy>
         </div>
       </div>
@@ -76,9 +71,18 @@ export function Comp({
   );
 }
 
-
-export function Curvy({className , children} : {className ?: string,children : React.ReactNode}){
-  return(<div className="tracking-tight text-2xl font-semibold font-caveat">{children}</div>)
+export function Curvy({
+  className,
+  children,
+}: {
+  className?: string;
+  children: React.ReactNode;
+}) {
+  return (
+    <div className="tracking-tight text-2xl font-medium font-caveat">
+      {children}
+    </div>
+  );
 }
 
 export function Subheading({ children }: { children: React.ReactNode }) {

@@ -1,16 +1,43 @@
 "use client";
 import { cn } from "@/lib/utils";
-import FAQs, { Title, Subitle, Answer, Questions } from "./FAQs";
-import { Curvy, Subheading } from "./Hero";
+import FAQs, { Title, Subitle, Answer } from "./FAQs";
+
 import { useState } from "react";
 import Image from "next/image";
 import Pricing from "./Pricing";
 import Start from "./Start";
+import { Curvy } from "./Hero";
 
 export default function Body() {
+  const logos = [
+    { src: "/batavia.png" },
+    { src: "/block.png" },
+    { src: "/Obima.png" },
+    { src: "/sadewa.png" },
+    { src: "/Velox.png" },
+    { src: "/nakula.png" },
+  ];
   const [show, setShow] = useState(true);
   return (
-    <div className="my-60 min-h-screen p-2">
+    <div className=" min-h-screen p-2">
+      <Subitle className="text-center my-20">Trusted by</Subitle>
+      <div className="flex flex-wrap mb-40 justify-center gap-5 w-250 mx-auto">
+        {logos.map((itm, idx) => (
+          <div
+            className="bg-neutral-200 hover:bg-neutral-300 hover:shadow-sm cursor-pointer transition-all duration-150 p-14 flex justify-center items-center   text-neutral-400 rounded-md h-30  w-68"
+            key={idx}
+          >
+            <Image
+              key={idx}
+              src={itm.src}
+              height={1000}
+              width={1000}
+              alt="1"
+            ></Image>
+          </div>
+        ))}
+      </div>
+
       <Subitle> Tools</Subitle>
 
       <div className="flex justify-between">
@@ -174,9 +201,9 @@ export default function Body() {
           </Answer>
         </div>
       </div>
-      <FAQs/>
-      <Pricing/>
-     <Start/>
+      <FAQs />
+      <Pricing />
+      <Start />
     </div>
   );
 }

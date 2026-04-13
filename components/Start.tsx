@@ -98,7 +98,7 @@ export default function Start() {
           </div>
         </div>
       </div>
-      <h1 className=" font-display tracking-tighter -translate-y-27 text-[280px]  font-black bg-clip-text bg-linear-to-r text-transparent from-neutral-200 to-neutral-300">
+      <h1 className=" flex-nowrap tracking-tighter font-sans -translate-y-27 text-[330px]  font-bold bg-clip-text bg-linear-to-r text-transparent from-neutral-200 to-neutral-300">
         SkillTrade
       </h1>
     </div>
