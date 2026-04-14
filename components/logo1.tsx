@@ -1,4 +1,4 @@
-export default function Logo(){
+export default function Logo({className}  : {className ? : string}){
   return(<>
   
   <svg
@@ -7,6 +7,7 @@ export default function Logo(){
         width="35"
         height="30"
         fill="rgb(245, 245, 245)"
+        className={className}
       >
         <g color="rgb(159, 128, 218)">
           <path

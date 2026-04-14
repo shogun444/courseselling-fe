@@ -7,6 +7,9 @@ import Image from "next/image";
 import Pricing, { Card, Features } from "./Pricing";
 import Start from "./Start";
 import { Curvy } from "./Hero";
+import Logo from "./logo1";
+import BottomLine, { Middle,TopLine } from "./lines";
+
 
 export default function Body() {
   const logos = [
@@ -40,7 +43,7 @@ export default function Body() {
 
       <Subitle> The Bottleneck in Revenue Teams</Subitle>
 
-      <div className="flex justify-between">
+      <div className="flex justify-between items-end mb-14">
         <Title>
           Revenue teams are <br /> drowning in manual work.
         </Title>
@@ -50,22 +53,39 @@ export default function Body() {
         </Answer>
       </div>
 
-      <Card className="w-150 bg-linear-to-tl from-50%  from-blue-700  to-black overflow-hidden">
-        <Curvy className="text-neutral-400">After Skilltrade</Curvy>
-        <Question className="text-white text-5xl">Automated and effortless</Question>
-        <Features className="text-neutral-200 font-sans font-semibold gap-2 mt-40">
-          Calls, notes, and updates are logged automatically.
-        </Features>
-        <Features className="text-neutral-200 font-sans font-semibold gap-2">
-          Forecasts stay accurate and always up to date.{" "}
-        </Features>
-        <Features className="text-neutral-200 font-sans font-semibold gap-2">
-          Deals move through stages with instant AI approvals.
-        </Features>
-        <Features className="text-neutral-200 font-sans font-semibold gap-2">
-          Reports and dashboards sync themselves in real time.
-        </Features>
-      </Card>
+      <div className="flex relative items-center justify-between mb-40 ">
+        <TopLine/>
+        <Middle />
+        <BottomLine />
+        <Card className="h-40 absolute w-40 translate-x-30  rounded-4xl  flex justify-center  items-center  border border-neutral-300 shadow-neutral-500 shadow-xs ">
+          <Image
+            className="p-1.5 shadow-neutral-600 shadow-lg rounded-4xl absolute w-fit h-fit "
+            src={"/3d.avif"}
+            alt="3d"
+            height={1000}
+            width="1000"
+          ></Image>
+        </Card>
+
+        <Card className="w-150 translate-x-150 overflow-hidden bg-[linear-gradient(125deg,rgba(0,0,0,1)_10%,rgba(0,0,0,0.4)_45%),linear-gradient(120deg,rgba(16,46,97,1),rgba(16,46,97,1))]">
+          <Curvy className="text-neutral-400">After Skilltrade</Curvy>
+          <Question className="text-white text-5xl">
+            Automated and effortless
+          </Question>
+          <Features className="text-neutral-200 font-sans font-semibold gap-2 mt-40">
+            Calls, notes, and updates are logged automatically.
+          </Features>
+          <Features className="text-neutral-200 font-sans font-semibold gap-2">
+            Forecasts stay accurate and always up to date.{" "}
+          </Features>
+          <Features className="text-neutral-200 font-sans font-semibold gap-2">
+            Deals move through stages with instant AI approvals.
+          </Features>
+          <Features className="text-neutral-200 font-sans font-semibold gap-2">
+            Reports and dashboards sync themselves in real time.
+          </Features>
+        </Card>
+      </div>
 
       <Subitle> Tools</Subitle>
 
