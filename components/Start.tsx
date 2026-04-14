@@ -7,8 +7,8 @@ import Image from "next/image";
 
 export default function Start() {
   return (
-    <div className="py-25 justify-items-center text-center min-h-screen">
-      <div>
+    <div className="max-w-6xl  mx-auto  justify-items-center  text-center min-h-screen">
+      <div className="py-25">
         <Subitle>Get Started!</Subitle>
         <Title>
           Build skills that <br /> get you hired
@@ -16,11 +16,13 @@ export default function Start() {
         <Label className="text-neutral-400 tracking-tight text-md my-7 ">
           Spend less time browsing. More time learning skills that pay.
         </Label>
+
+        <Button>Start Free Trial</Button>
       </div>
 
-      <Button>Start Free Trial</Button>
+      
 
-      <div className="flex mt-50 items-center gap-5">
+      <div className="flex items-center gap-5 justify-center translate-y-51">
         <div className="relative   rounded-2xl   text-left w-90 min-h-112">
           <Image
             src="/bg.avif"
@@ -49,7 +51,7 @@ export default function Start() {
             </div>
           </div>
         </div>
-        <div className="flex-col  bg-neutral-200 rounded-2xl p-5 text-left h-112  w-200">
+        <div className="flex-col  bg-neutral-200 rounded-2xl p-5 text-left min-h-112  w-200">
           <div className="flex ">
             <div>
               <Subitle>Navigation </Subitle>
@@ -98,7 +100,7 @@ export default function Start() {
           </div>
         </div>
       </div>
-      <h1 className=" flex-nowrap tracking-tighter font-sans -translate-y-27 text-[330px]  font-bold bg-clip-text bg-linear-to-r text-transparent from-neutral-200 to-neutral-300">
+      <h1 className=" tracking-tighter font-sans translate-y-28 text-[275px]  font-bold bg-clip-text bg-linear-to-b text-transparent from-neutral-100 to-neutral-300">
         SkillTrade
       </h1>
     </div>

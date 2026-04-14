@@ -7,7 +7,7 @@ import Arrow from "./Arrow";
 
 export default function Hero() {
   return (
-    <div className="flex  space-x-10  ">
+    <div className="flex max-w-6xl mx-auto space-x-10  ">
       <div className="md:w-1/2">
         <CTA>Elevate Your Knowledge</CTA>
 
@@ -40,7 +40,7 @@ export default function Hero() {
             </Comp>
           </div>
           <Image
-            className="absolute w-110 h-164 -translate-y-75 translate-x-20"
+            className="absolute w-120 h-180 -translate-y-75 translate-x-5"
             src={"/nice.png"}
             height={1000}
             width={1000}

@@ -45,7 +45,7 @@ export default function FAQs() {
   const [openId, setOpenId] = useState<number | null>(null);
 
   return (
-    <div className="my-40 min-h-screen flex justify-between">
+    <div className="my-40 flex justify-between">
       <div>
         <Subitle>FAQ</Subitle>
         <Title>

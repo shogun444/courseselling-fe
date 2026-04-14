@@ -22,7 +22,7 @@ export default function Body() {
   ];
   const [show, setShow] = useState(true);
   return (
-    <div className=" min-h-screen p-2">
+    <div className="max-w-6xl mx-auto min-h-screen p-2 ">
       <Subitle className="text-center mt-20 mb-7">Trusted by</Subitle>
       <div className="flex flex-wrap mb-40 justify-center gap-5 w-250 mx-auto">
         {logos.map((itm, idx) => (
