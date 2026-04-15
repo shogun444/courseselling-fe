@@ -158,7 +158,7 @@ export function Answer({
   return (
     <div
       className={cn(
-        `my-2 px-2 font-medium tracking-tight text-md font-sans text-neutral-500`,
+        `my-2 font-medium tracking-tight text-md font-sans text-neutral-500`,
         className,
       )}
     >

@@ -6,7 +6,7 @@ import Start from "@/components/Start";
 
 export default function Home() {
   return (
-    <div className=" mt-3 px-25 min-h-screen w-[calc(98%)] overflow-hidden mx-auto rounded-3xl bg-linear-to-r from-neutral-200  via-transparent to-zinc-100  ">
+    <div className=" mt-3  min-h-screen w-[calc(98%)] overflow-hidden mx-auto rounded-3xl bg-linear-to-r from-neutral-200  via-transparent to-zinc-100  ">
       <div className=" max-w-6xl mx-auto  flex justify-between py-8 ">
         <div className="flex  items-center">
           <Logo />
