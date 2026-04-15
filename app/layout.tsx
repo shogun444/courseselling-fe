@@ -34,7 +34,6 @@ export default function RootLayout({
         className={`${manrope.variable} ${inter.variable} ${caveat.variable} antialiased`}
       >
         {children}
-       
       </body>
     </html>
   );
