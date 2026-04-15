@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { Caveat, Inter, Manrope } from "next/font/google";
-import Footer from "@/components/Footer";
 
 export const manrope = Manrope({
   subsets: ["latin"],
