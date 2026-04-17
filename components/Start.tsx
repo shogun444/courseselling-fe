@@ -20,8 +20,10 @@ export default function Start() {
         <Button>Start Free Trial</Button>
       </div>
 
-      <div className="flex flex-col gap-5 items-center justify-center md:flex-row md:translate-y-51">
-        <div className="relative rounded-2xl text-left w-full max-w-[420px] min-h-112">
+      
+
+      <div className="flex items-center gap-5 justify-center translate-y-51">
+        <div className="relative   rounded-2xl   text-left w-90 min-h-112">
           <Image
             src="/bg.avif"
             alt="bg"
@@ -30,8 +32,8 @@ export default function Start() {
           />
 
           <div className="absolute inset-0 z-10 flex p-8">
-            <div className="flex-col gap-8">
-              <div className="flex text-left items-center gap-3">
+            <div className="flex-col   gap-8">
+              <div className="flex text-left items-center">
                 <Logo />
                 <h1 className="text-white text-3xl font-semibold">
                   Skilltrade
@@ -49,8 +51,8 @@ export default function Start() {
             </div>
           </div>
         </div>
-        <div className="flex-col w-full max-w-[420px] bg-neutral-200 rounded-2xl p-5 text-left min-h-112">
-          <div className="flex flex-col gap-8 md:flex-row md:items-start">
+        <div className="flex-col  bg-neutral-200 rounded-2xl p-5 text-left min-h-112  w-200">
+          <div className="flex ">
             <div>
               <Subitle>Navigation </Subitle>
               <Label>Testimonials</Label>
@@ -60,7 +62,7 @@ export default function Start() {
               <Label>Features</Label>
               <Label>Changelog</Label>
             </div>
-            <div className="md:ml-10">
+            <div className="ml-10">
               <Subitle>Company </Subitle>
               <Label>About</Label>
               <Label>Framer templates</Label>
@@ -83,13 +85,13 @@ export default function Start() {
                 <Question className="font-bold">
                   Stay ahead with SkillTrade.
                 </Question>
-                <div className="relative my-4 w-full max-w-[400px]">
+                <div className="relative my-4">
                   <input
                     type="text"
-                    className="bg-white p-4 outline-none focus-visible:ring-1 focus-visible:ring-neutral-700 duration-200 w-full font-medium rounded-2xl text-[16px]"
+                    className="bg-white p-4 outline-none focus-visible:ring-1 focus-visible:ring-neutral-700 duration-200 w-80 font-medium rounded-2xl text-[16px]"
                     placeholder="Enter email address"
                   />
-                  <Button className="absolute right-2 top-1/2 -translate-y-1/2 text-md tracking-normal py-4 px-5 shadow-input">
+                  <Button className="absolute text-md  tracking-normal py-6 shadow-input -translate-x-28 translate-y-1">
                     Subscribe
                   </Button>
                 </div>
@@ -98,7 +100,7 @@ export default function Start() {
           </div>
         </div>
       </div>
-      <h1 className="tracking-tighter font-sans translate-y-28 text-[120px] md:text-[275px] font-bold bg-clip-text bg-linear-to-b text-transparent from-neutral-100 to-neutral-300">
+      <h1 className=" tracking-tighter font-sans translate-y-28 text-[275px]  font-bold bg-clip-text bg-linear-to-b text-transparent from-neutral-100 to-neutral-300">
         SkillTrade
       </h1>
     </div>

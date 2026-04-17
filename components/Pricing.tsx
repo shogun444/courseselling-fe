@@ -8,12 +8,12 @@ import { Button } from "./ui/button";
 export default function Pricing() {
   const [click, setClick] = useState(false);
   return (
-    <div className="my-40 px-4 sm:px-6">
+    <div className="my-40">
       <div className="flex flex-col justify-center items-center">
         <Subitle>Pricing & Plans</Subitle>
         <Title>Plans that grow with you</Title>
 
-        <div className="flex flex-col gap-3 items-center my-7 sm:flex-row">
+        <div className="flex items-center my-7">
           <Question className="text-neutral-400 tracking-tight text-xl font-bold">
             Monthly
           </Question>
@@ -30,14 +30,14 @@ export default function Pricing() {
           </Question>
         </div>
 
-        <div className="flex flex-col gap-8 items-stretch md:flex-row md:items-center">
+        <div className="flex items-center">
           <Card>
             <Question className="font-bold">Starter </Question>
             <Answer className="tracking-tighter text-md">
               {" "}
               For scaling teams
             </Answer>
-            <div className="flex items-end gap-2">
+            <div className="flex">
               <Title> $29 </Title>{" "}
               <Answer className="tracking-tighter text-md mt-6">/mo</Answer>
             </div>
@@ -60,19 +60,19 @@ export default function Pricing() {
             </div>
 
             <div className="flex justify-center">
-              <Button className="w-full md:w-auto px-16 py-6 mt-4 text-md">
+              <Button className="px-16  py-6 mt-4 text-md">
                 Choose Starter
               </Button>
             </div>
           </Card>
 
-          <div className="w-full md:w-auto border-3 border-blue-500 z-10 rounded-3xl relative bg-linear-to-br from-blue-400 to-blue-500 p-2 ring-1 ring-blue-600 ring-offset-1 shadow-xl shadow-blue-300">
+          <div className=" border-3 border-blue-500 z-10 rounded-3xl relative bg-linear-to-br from-blue-400 to-blue-500 p-2 ring-1 ring-blue-600 ring-offset-1 shadow-xl shadow-blue-300">
             <Card className="mx-0">
               <Question className="font-bold">Pro </Question>
               <Answer className="tracking-tighter text-md">
                 For growing teams
               </Answer>
-              <div className="flex items-end gap-2">
+              <div className="flex">
                 <Title> $59</Title>
                 <Answer className="tracking-tighter text-md mt-6">/mo</Answer>
               </div>
@@ -95,9 +95,7 @@ export default function Pricing() {
               </div>
 
               <div className="flex justify-center">
-                <Button className="w-full md:w-auto px-16 py-6 mt-4 text-md">
-                  Choose Pro
-                </Button>
+                <Button className="px-16  py-6 mt-4 text-md">Choose Pro</Button>
               </div>
             </Card>
           </div>
@@ -130,7 +128,7 @@ export default function Pricing() {
             </div>
 
             <div className="flex justify-center">
-              <Button className="w-full md:w-auto px-16 py-6 mt-4 text-md">
+              <Button className="px-16  py-6 mt-4 text-md">
                 Choose Enterprise
               </Button>
             </div>
@@ -151,7 +149,7 @@ export function Card({
   return (
     <div
       className={cn(
-        `rounded-3xl border border-neutral-200 shadow-2xl p-5 mx-auto w-full max-w-[320px] md:w-80 md:h-105 bg-neutral-100`,
+        `rounded-3xl border border-neutral-200 shadow-2xl p-5 mx-6 w-80 h-105 bg-neutral-100`,
         className,
       )}
     >

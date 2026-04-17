@@ -20,9 +20,9 @@ export default function Body() {
   ];
   const [show, setShow] = useState(true);
   return (
-    <div className="w-full max-w-6xl mx-auto min-h-screen px-4 py-2 sm:px-6">
+    <div className="max-w-6xl mx-auto min-h-screen p-2 ">
       <Subitle className="text-center mt-20 mb-7">Trusted by</Subitle>
-      <div className="flex flex-wrap mb-40 justify-center gap-5 w-full max-w-full mx-auto">
+      <div className="flex flex-wrap mb-40 justify-center gap-5 w-250 mx-auto">
         {logos.map((itm, idx) => (
           <div
             className="bg-neutral-200 hover:bg-neutral-300 hover:shadow-sm cursor-pointer transition-all duration-150 p-14 flex justify-center items-center   text-neutral-400 rounded-md h-30  w-68"
@@ -97,12 +97,12 @@ export default function Body() {
         </Answer>
       </div>
 
-      <div className="w-full h-auto my-16 gap-6 grid grid-cols-1 md:grid-cols-5">
-        <div className="col-span-1 md:col-span-3 p-5 relative rounded-3xl shadow-input bg-linear-to-r from-neutral-200 to-neutral-100">
+      <div className="w-full h-100 my-16 gap-6 grid grid-cols-5 ">
+        <div className="col-span-3 p-5 relative rounded-3xl shadow-input bg-linear-to-r  from-neutral-200 to-neutral-100">
           <Question>Auto Engage</Question>
           <Answer>Turn conversation into conversion instantly with AI.</Answer>
 
-          <AutoEngage className="w-full md:w-60" src="/girl1.jpg">
+          <AutoEngage src="/girl1.jpg">
             <div className="">
               <Answer className="text-neutral-800">Kumala Sari</Answer>
               <div className="flex-col ">
@@ -111,10 +111,7 @@ export default function Body() {
               </div>
             </div>
           </AutoEngage>
-          <AutoEngage
-            className="w-full md:w-60 md:translate-x-15"
-            src="/girl2.jpg"
-          >
+          <AutoEngage className="translate-x-15" src="/girl2.jpg">
             <div className="">
               <Answer className="text-neutral-800">Karina Larasathi</Answer>
               <div className="flex-col ">
@@ -126,7 +123,7 @@ export default function Body() {
           <Members />
           <div className=""></div>
         </div>
-        <div className="col-span-1 md:col-span-2 p-5 rounded-3xl shadow-input bg-linear-to-r from-neutral-200 to-neutral-100">
+        <div className=" col-span-2 p-5 rounded-3xl shadow-input bg-linear-to-r from-neutral-200   to-neutral-100">
           <Question>Save & Track</Question>
           <Answer>
             Intelligent bookmarks that remember exactly where you left off in
@@ -180,26 +177,25 @@ export default function Body() {
           )}
         </div>
       </div>
-      <div className="w-full h-auto my-16 gap-6 grid grid-cols-1 md:grid-cols-4">
-        <div className="col-span-1 md:col-span-2 px-5 pt-5 rounded-3xl shadow-input bg-linear-to-r from-neutral-200 to-neutral-100">
-          <Question>Revenue Forecasting</Question>
+      <div className="w-full h-100 my-16 gap-6 grid grid-cols-4">
+        <div className="col-span-2 px-5 pt-5 rounded-3xl shadow-input bg-linear-to-r from-neutral-200  to-neutral-100 ">
+          <Question> Revenue Forecasting</Question>
           <Answer>Know your numbers before anyone else does.</Answer>
 
           <Image
-            className="w-full h-auto rounded-3xl"
             src={"/revenue.avif"}
             height={1000}
             width={1000}
             alt="dash"
           ></Image>
         </div>
-        <div className="col-span-1 md:col-span-2 px-5 pt-5 rounded-3xl shadow-input bg-linear-to-r from-neutral-200 via-neutral-100 to-blue-50 overflow-hidden">
+        <div className="col-span-2 px-5 pt-5    rounded-3xl shadow-input bg-linear-to-r from-neutral-200 via-neutral-100 to-blue-50 overflow-hidden">
           <Question>Deal Intelligence</Question>
           <Answer>
             Spot which opportunities are heating up before the quarter ends.
           </Answer>
           <Image
-            className="w-full h-auto md:scale-105 md:translate-y-35"
+          className="scale-105 translate-y-35"
             src="/dashboard.avif"
             height="1000"
             width="1000"
@@ -250,7 +246,7 @@ export function AutoEngage({
   return (
     <div
       className={cn(
-        `w-full md:w-60 h-auto md:h-33 flex-col justify-items-center gap-3 p-4 mx-auto md:m-4 text-left rounded-2xl shadow-lg shadow-neutral-300 bg-neutral-50`,
+        `w-60 h-33 flex-col  justify-items-center gap-3 p-4  m-4 text-left rounded-2xl  shadow-lg shadow-neutral-300 bg-neutral-50`,
         className,
       )}
     >
