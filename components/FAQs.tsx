@@ -45,7 +45,7 @@ export default function FAQs() {
   const [openId, setOpenId] = useState<number | null>(null);
 
   return (
-    <div className="my-40 flex justify-between">
+    <div className="my-40 flex flex-col gap-10">
       <div>
         <Subitle>FAQ</Subitle>
         <Title>
@@ -169,7 +169,7 @@ export function Answer({
 
 export function Both({ children }: { children: React.ReactNode }) {
   return (
-    <div className="rounded-xl p-4 w-150 shadow-sm bg-neutral-100">
+    <div className="rounded-xl p-4 w-full md:w-150 shadow-sm bg-neutral-100">
       {children}
     </div>
   );

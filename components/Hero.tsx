@@ -7,12 +7,14 @@ import Arrow from "./Arrow";
 
 export default function Hero() {
   return (
-    <div className="flex max-w-6xl mx-auto space-x-10  ">
-      <div className="md:w-1/2">
+    <div className="flex flex-col gap-10 max-w-6xl mx-auto px-4 sm:px-6 md:flex-row md:items-center">
+      <div className="w-full md:w-1/2">
         <CTA>Elevate Your Knowledge</CTA>
 
-        <Heading>Learn Anything From Videos That</Heading>
-        <Heading1>Actually Matter</Heading1>
+        <Heading className="text-4xl md:text-7xl">
+          Learn Anything From Videos That
+        </Heading>
+        <Heading1 className="text-4xl md:text-7xl">Actually Matter</Heading1>
 
         <Subheading>
           A curated high-end learning gallery for the modern scholar. Access
@@ -20,19 +22,21 @@ export default function Hero() {
           just pure editorial excellence.
         </Subheading>
 
-        <div className="space-x-4 ">
-          <Button>Start Free Trial</Button>
-          <Button variant={"outline"}>Take a Demo</Button>
+        <div className="flex flex-col gap-4 sm:flex-row">
+          <Button className="w-full sm:w-auto">Start Free Trial</Button>
+          <Button className="w-full sm:w-auto" variant={"outline"}>
+            Take a Demo
+          </Button>
         </div>
 
-        <div className="flex mt-3 items-center text-neutral-400">
+        <div className="flex flex-wrap items-center gap-2 mt-3 text-neutral-400">
           <Arrow /> <Curvy>1-month free trial. No credit card required.</Curvy>
         </div>
       </div>
 
-      <div className="w-150 py-5 px-5 relative  overflow-hidden bg-neutral-100 shadow-input rounded-3xl">
-        <div className=" bg-blue-500  shadow-blue-200 shadow-md h-58 w-51 rounded-2xl p-0.5">
-          <div className="h-57  border   border-blue-200 w-50 p-3 m-px  bg-linear-to-b from-blue-300 to-blue-500 rounded-2xl">
+      <div className="w-full md:w-[420px] py-5 px-5 relative overflow-hidden bg-neutral-100 shadow-input rounded-3xl">
+        <div className="bg-blue-500 shadow-blue-200 shadow-md h-58 w-full max-w-[360px] rounded-2xl p-0.5 mx-auto">
+          <div className="h-57 border border-blue-200 w-full max-w-[344px] p-3 m-px bg-linear-to-b from-blue-300 to-blue-500 rounded-2xl">
             <Logo />
             <Comp className="pt-10 text-neutral-200">100+</Comp>
             <Comp className="opacity-65">
@@ -40,7 +44,7 @@ export default function Hero() {
             </Comp>
           </div>
           <Image
-            className="absolute w-120 h-180 -translate-y-75 translate-x-5"
+            className="absolute w-full max-w-[480px] h-auto -translate-y-20 translate-x-5"
             src={"/nice.png"}
             height={1000}
             width={1000}
@@ -79,7 +83,12 @@ export function Curvy({
   children: React.ReactNode;
 }) {
   return (
-    <div className={cn(`tracking-tight text-2xl font-medium font-caveat`,className)}>
+    <div
+      className={cn(
+        `tracking-tight text-2xl font-medium font-caveat`,
+        className,
+      )}
+    >
       {children}
     </div>
   );
@@ -110,7 +119,7 @@ export function Heading({
     </div>
   );
 }
-export function Heading1({ children }: { children: React.ReactNode }) {
+export function Heading1({ children ,className }: { children: React.ReactNode ,className ?: string}) {
   return (
     <div className="font-bold font-display text-7xl  italic text-cyan-900">
       {children}
@@ -142,3 +151,4 @@ export function CTA({ children }: { children: React.ReactNode }) {
     </div>
   );
 }
+
